@@ -23,7 +23,6 @@ namespace Rocket
             returnString = landObj.Process(14,14);
             Console.WriteLine(returnString);
             landObj.PrintTwoDimensionalArray();
-            //landObj.CreateLandingPlatformList(startingLandingPoint,size);
             Console.ReadKey();
             
         }
@@ -51,7 +50,6 @@ namespace Rocket
             EndingLandingPoint = startingPoint + size;
             StartingLandingPoint = startingPoint;
             LandPlatformArray = CreateLandingPlatformArray(size);
-            //PrintTwoDimensionalArray();
         }
 
         public void PrintTwoDimensionalArray(){
@@ -75,7 +73,6 @@ namespace Rocket
                 return "clash";
             }
             else{
-                //LandPlatformArray[ x , y ] = true;
                 SetSeperationPoints(x,y);
                 return "ok for landing";
             }
